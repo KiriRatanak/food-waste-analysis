@@ -14,14 +14,58 @@ organic_data
 ```{r}
 col_to_drop <- c(
   'Timestamp', 
-  'Why.do.you.think.there.is.leftover.food.in.your.household',
-  'What.are.the.reasons.behind.your.groceries.ingredients.becoming.spoiled.or.expired'.
+  'Why.do.you.think.there.is.leftover.food.in.your.household.',
+  'What.are.the.reasons.behind.your.groceries.ingredients.becoming.spoiled.or.expired.'
 )
-cleaned_data <- organic_data[!(names(organic_data) %in% drop)]
+cleaned_data <- organic_data[,!(names(organic_data) %in% col_to_drop)]
 cleaned_data
 ```
 
+# Rename existing features
 ```{r}
+col_names <- colnames(cleaned_data)
+new_names <- c('age', 'occupation', 'dine_out_freq', 'buy_freq', 'buy_method', 'amount_spent', 'left_over_amount')
+names(cleaned_data)[names(cleaned_data) == col_names] <- new_names
+cleaned_data
+```
+# Replace occupation data
+```{r}
+cleaned_data$occupation <- tolower(cleaned_data$occupation)
+cleaned_data$occupation <- gsub('/stud/', 'student', cleaned_data$occupation)
+cleaned_data$occupation <- replace(cleaned_data$occupation, cleaned_data$occupation != 'student', 'employee')
+cleaned_data
+```
 
+# Clean amount_spent features
+```{r}
+library(stringr)
+cleaned_data$amount_spent <- str_remove_all(cleaned_data$amount_spent, '[$]')
+```
+
+# Remove amount_spent that is NaN
+```{r}
+cleaned_data$amount_spent <- as.numeric(cleaned_data$amount_spent)
+cleaned_data <- subset(cleaned_data, !is.na(cleaned_data$amount_spent))
+```
+
+# Clean buy_method
+```{r}
+cleaned_data$buy_method <- gsub('Go and buy from the shop directly', 'physical shop', cleaned_data$buy_method)
+cleaned_data$buy_method <- replace(cleaned_data$buy_method, cleaned_data$buy_method != 'physical shop', 'online')
+cleaned_data
+```
+# Convert left_over_amount to percentage
+```{r}
+cleaned_data$left_over_amount <- replace(cleaned_data$left_over_amount, cleaned_data$left_over_amount == '1/4 of the food cooked', '25')
+cleaned_data$left_over_amount <- replace(cleaned_data$left_over_amount, cleaned_data$left_over_amount == '1/2 of the food cooked', '50')
+cleaned_data$left_over_amount <- replace(cleaned_data$left_over_amount, cleaned_data$left_over_amount == '1/3 of the food cooked', '33.33')
+cleaned_data$left_over_amount <- replace(cleaned_data$left_over_amount, cleaned_data$left_over_amount == 'Never have food leftover', 0)
+cleaned_data$left_over_amount < as.numeric(cleaned_data$left_over_amount)
+cleaned_data <- subset(cleaned_data, !is.na(cleaned_data$left_over_amount))
+cleaned_data
+```
+# Export csv
+```{r}
+write.csv(cleaned_data, './cleaned_data_set.csv')
 ```
 
