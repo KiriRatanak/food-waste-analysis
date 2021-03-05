@@ -1,0 +1,27 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+# Import Data
+```{r}
+library(readr)
+organic_data <- read.csv('./food_waste_survey.csv')
+organic_data
+```
+# Drop uneccesary field
+```{r}
+col_to_drop <- c(
+  'Timestamp', 
+  'Why.do.you.think.there.is.leftover.food.in.your.household',
+  'What.are.the.reasons.behind.your.groceries.ingredients.becoming.spoiled.or.expired'.
+)
+cleaned_data <- organic_data[!(names(organic_data) %in% drop)]
+cleaned_data
+```
+
+```{r}
+
+```
+
