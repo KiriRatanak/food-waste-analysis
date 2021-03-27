@@ -33,19 +33,21 @@ cleaned_data
 cleaned_data$occupation <- tolower(cleaned_data$occupation)
 cleaned_data$occupation <- gsub('/stud/', 'student', cleaned_data$occupation)
 cleaned_data$occupation <- replace(cleaned_data$occupation, cleaned_data$occupation != 'student', 'employee')
-cleaned_data
+cleaned_data$occupation
 ```
 
 # Clean amount_spent features
 ```{r}
 library(stringr)
 cleaned_data$amount_spent <- str_remove_all(cleaned_data$amount_spent, '[$]')
+cleaned_data$amount_spent
 ```
 
 # Remove amount_spent that is NaN
 ```{r}
 cleaned_data$amount_spent <- as.numeric(cleaned_data$amount_spent)
 cleaned_data <- subset(cleaned_data, !is.na(cleaned_data$amount_spent))
+cleaned_data
 ```
 
 # Clean buy_method
@@ -67,6 +69,6 @@ cleaned_data
 
 # Export csv
 ```{r}
-write.csv(cleaned_data, './cleaned_data_set.csv')
+write.csv(cleaned_data, './food_waste_data_set.csv')
 ```
 

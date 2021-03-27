@@ -1,0 +1,109 @@
+no,age,occupation,dine_out_freq,buy_freq,buy_method,amount_spent,left_over_amount,left_over_price
+1,23,employee,Never,Once a week,physical shop,60,0,0
+6,21,employee,Never,Everyday,physical shop,10,0,0
+7,22,employee,More than 3 times a week,Once every 2 week,physical shop,2,0,0
+10,20,employee,Only when my mom don’t want to cook,Twice a week,physical shop,20,25,5
+12,19,student,Once a week,once 2 days,physical shop,5,25,1.25
+14,18,student,Once a week,I am not the one who is shopping,physical shop,8,25,2
+15,22,employee,Once a week,Once a week,physical shop,60,25,15
+20,20,employee,Once a week,Once a week,physical shop,50,25,12.5
+22,23,employee,Occasionally ,Everyday,physical shop,5,50,2.5
+23,23,student,Once a week,Everyday,physical shop,10,25,2.5
+26,21,employee,Once a week,Twice a week,physical shop,10,25,2.5
+29,21,student,Once a week,I am not the one who is shopping,physical shop,100,25,25
+34,22,student,Once a week,I am not the one who is shopping,physical shop,25,25,6.25
+36,19,employee,Once a week,Twice a week,physical shop,50,25,12.5
+40,22,employee,Never,Everyday,physical shop,1.5,25,0.375
+41,22,employee,Twice a week,Twice a week,physical shop,200,0,0
+42,20,employee,Twice a week,Everyday,physical shop,5,0,0
+43,20,student,Only on holiday,Everyday,physical shop,10,50,5
+45,20,student,Never,Everyday,physical shop,20,25,5
+46,21,student,When there is an event,Everyday,physical shop,10,25,2.5
+47,21,employee,irregularly ,Everyday,physical shop,5,25,1.25
+48,22,employee,Never,Everyday,physical shop,10,33.33,3.333
+49,20,student,Never,I am not the one who is shopping,physical shop,10,25,2.5
+51,19,employee,Once a week,Once a week,physical shop,25,25,6.25
+54,22,student,Once a week,Twice a week,physical shop,5,25,1.25
+55,21,student,Never,Everyday,physical shop,20,25,5
+56,21,student,Once a week,Once a month,physical shop,30,25,7.5
+57,20,student,Never,Everyday,physical shop,10,25,2.5
+58,19,employee,Once a week,Once a week,physical shop,100,25,25
+60,20,student,Rarely,Twice a week,physical shop,20,25,5
+61,21,student,More than 3 times a week,Twice a week,physical shop,200,25,50
+62,20,employee,Twice a week,I am not the one who is shopping,physical shop,100,25,25
+63,18,student,Twice a week,Everyday,physical shop,40,0,0
+66,23,student,Twice a week,I am not the one who is shopping,physical shop,120,25,30
+67,22,employee,Twice a week,Everyday,physical shop,50,25,12.5
+68,19,student,Once a week,Everyday,physical shop,30,0,0
+69,17,student,Never,Everyday,physical shop,15,0,0
+70,19,student,Everyday,I am not the one who is shopping,physical shop,10,0,0
+71,20,student,Never,Everyday,physical shop,2,25,0.5
+72,19,student,Once a week,I am not the one who is shopping,physical shop,50,25,12.5
+74,20,student,Twice a week,Once a week,physical shop,50,33.33,16.665
+75,19,student,Everyday,I am not the one who is shopping,physical shop,20,0,0
+76,25,employee,Once a week,Twice a week,physical shop,30,0,0
+78,25,employee,Once a week,Twice a week,physical shop,60,25,15
+79,23,employee,only when there is some important event (sometimes once in 3 months),Twice a week,physical shop,25,0,0
+80,20,student,More than 3 times a week,Twice a week,physical shop,40,25,10
+81,27,employee,Once a month,Once a week,physical shop,50,25,12.5
+82,22,student,Twice a week,At Moringa,physical shop,30,0,0
+83,22,student,More than 3 times a week,Once every 2 week,physical shop,45,0,0
+84,20,employee,once per 2 weeks,Everyday,physical shop,10,0,0
+85,21,employee,"No, but buy food from outside to eat at home ",Twice a week,physical shop,20,25,5
+86,25,employee,Twice a week,Twice a week,physical shop,40,25,10
+87,19,employee,Everyday,Once a week,physical shop,70,25,17.5
+88,21,student,Never,Everyday,physical shop,25,25,6.25
+89,22,student,Never,Twice a week,physical shop,12.5,0,0
+91,31,employee,Rarely,Everyday,physical shop,3,0,0
+93,22,employee,Once a week,Twice a week,physical shop,60,0,0
+94,20,student,Once a week,I am not the one who is shopping,physical shop,50,25,12.5
+95,24,employee,Rarely,Twice a week,physical shop,20,25,5
+97,18,student,Once a week,Everyday,physical shop,20,25,5
+98,20,student,Everyday,Everyday,physical shop,20,33.33,6.666
+100,20,employee,Once a week,I am not the one who is shopping,physical shop,10,25,2.5
+102,21,student,Once a week,Twice a week,physical shop,20,25,5
+103,29,employee,More than 3 times a week,I am not the one who is shopping,physical shop,100,33.33,33.33
+107,21,student,Everyday,I am not the one who is shopping,physical shop,10,0,0
+108,20,student,Once a week,Twice a week,physical shop,25,33.33,8.3325
+109,20,student,Once a week,I am not the one who is shopping,physical shop,10,25,2.5
+110,23,student,More than 3 times a week,Everyday,physical shop,12,0,0
+111,21,employee,Once a week,Everyday,physical shop,5,25,1.25
+112,20,student,Once a week,Twice a week,physical shop,25,25,6.25
+113,21,student,Once a week,Twice a week,physical shop,20,25,5
+114,20,employee,Once a week,I am not the one who is shopping,physical shop,20,25,5
+115,25,employee,Twice a week,Twice a week,physical shop,50,0,0
+116,21,student,Once a week,Once a month,physical shop,40,25,10
+117,21,employee,Everyday,Everyday,physical shop,15,0,0
+118,18,employee,Twice a week,Everyday,physical shop,15,25,3.75
+119,28,employee,Once a week,Once a week,physical shop,20,0,0
+120,20,student,Once a week,Everyday,physical shop,20,25,5
+121,18,student,More than 3 times a week,Everyday,physical shop,10,25,2.5
+122,25,student,More than 3 times a week,I am not the one who is shopping,physical shop,2,25,0.5
+123,24,student,1/month,Everyday,physical shop,5,25,1.25
+125,28,employee,Once a week,Twice a week,physical shop,20,25,5
+126,23,employee,Once a month,Twice a week,physical shop,15,25,3.75
+128,21,student,Once a month,Twice a week,physical shop,20,25,5
+129,23,student,Never,Twice a week,physical shop,50,0,0
+131,21,employee,Never,Everyday,online,10,50,5
+132,21,student,Never,I am not the one who is shopping,physical shop,50,0,0
+133,21,student,Twice a month,Once a week,physical shop,100,25,25
+134,20,student,Once a week,Everyday,physical shop,15,25,3.75
+135,22,student,More than 3 times a week,Twice a week,physical shop,45,0,0
+136,26,employee,Everyday,Once a week,physical shop,30,25,7.5
+138,24,employee,Never,Everyday,physical shop,50,0,0
+139,21,employee,Once a week,Once a week,physical shop,50,0,0
+140,19,student,Everyday,Once every 2 week,physical shop,30,25,7.5
+141,23,student,Once a week,Once a week,physical shop,60,25,15
+142,21,student,Twice a week,Once every 2 week,physical shop,60,0,0
+143,26,employee,Never,I am not the one who is shopping,physical shop,0,0,0
+144,23,employee,More than 3 times a week,Once a week,online,85,25,21.25
+145,25,employee,Once a week,Once every 2 week,physical shop,60,0,0
+146,19,student,Never,Twice a week,physical shop,60,0,0
+147,21,employee,More than 3 times a week,Once every 2 week,physical shop,50,25,12.5
+148,22,student,Never,Everyday,physical shop,20,25,5
+149,23,student,More than 3 times a week,Everyday,online,100,25,25
+151,25,student,Once a week,Twice a week,physical shop,30,0,0
+152,24,employee,Twice a week,Everyday,physical shop,15,0,0
+153,20,student,Once in a while,Everyday,physical shop,20,25,5
+154,26,employee,More than 3 times a week,Twice a week,physical shop,25,33.33,8.3325
+155,20,student,Never,Twice a week,physical shop,50,25,12.5
