@@ -60,10 +60,11 @@ cleaned_data$left_over_amount <- replace(cleaned_data$left_over_amount, cleaned_
 cleaned_data$left_over_amount <- replace(cleaned_data$left_over_amount, cleaned_data$left_over_amount == '1/2 of the food cooked', '50')
 cleaned_data$left_over_amount <- replace(cleaned_data$left_over_amount, cleaned_data$left_over_amount == '1/3 of the food cooked', '33.33')
 cleaned_data$left_over_amount <- replace(cleaned_data$left_over_amount, cleaned_data$left_over_amount == 'Never have food leftover', 0)
-cleaned_data$left_over_amount < as.numeric(cleaned_data$left_over_amount)
+cleaned_data$left_over_amount <- as.numeric(cleaned_data$left_over_amount)
 cleaned_data <- subset(cleaned_data, !is.na(cleaned_data$left_over_amount))
 cleaned_data
 ```
+
 # Export csv
 ```{r}
 write.csv(cleaned_data, './cleaned_data_set.csv')
